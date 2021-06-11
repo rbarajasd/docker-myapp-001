@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+  web:
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
+    volumes:
+    - ./build/libs/gradle-project-0.0.1-SNAPSHOT.jar:/usr/app/app.jar
