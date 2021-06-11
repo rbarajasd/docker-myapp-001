@@ -16,7 +16,7 @@ public class VisitsModel implements Serializable {
     }
 
     public void addVisit() {
-        this.visits++;
+        visits++;
     }
 
     public String getKey() {

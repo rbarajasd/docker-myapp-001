@@ -1,5 +1,6 @@
 package com.gradle.project.gradleproject.controller;
 
+import com.gradle.project.gradleproject.constants.Constants;
 import com.gradle.project.gradleproject.service.VisitsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello Docker!";
+        return Constants.STR_HELLO_DOCKER;
     }
 
     @GetMapping(path = "/visits")
