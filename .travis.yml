@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t rbarajasd/my-app -f Docker.dev .
+
+script:
+  - docker run myapp
