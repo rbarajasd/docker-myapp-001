@@ -16,7 +16,7 @@ deploy:
   region: "us-west-2"
   app: "gradle-project-001"
   env: "Gradleproject001-env"
-  bucket_name: "elasticbeanstalk-us-east-2-292096943797"
+  bucket_name: "gradle-project-bucket"
   bucket_path: "docker"
   on:
     branch: master
