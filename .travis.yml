@@ -16,8 +16,8 @@ deploy:
   region: "us-west-2"
   app: "gradle-project-001"
   env: "Gradleproject001-env"
-  bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-292096943797"
-  bucket_path: "gradle-project-001"
+  bucket_name: "elasticbeanstalk-us-east-2-292096943797"
+#  bucket_path: "gradle-project-001"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
