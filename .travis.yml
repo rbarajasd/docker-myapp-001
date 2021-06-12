@@ -10,3 +10,16 @@ language: java
 
 script:
   - ./gradlew build
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "docker"
+  env: "gradle-project-001"
+  bucket_name: "elasticbeanstalk-us-east-2-292096943797"
+  bucket_path: "docker"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
