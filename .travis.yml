@@ -14,10 +14,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: "docker"
-  env: "gradle-project-001"
+  app: "gradle-project-001"
+  env: "Gradleproject001-env"
   bucket_name: "elasticbeanstalk-us-east-2-292096943797"
-  bucket_path: "docker"
+  bucket_path: "gradle-project-001"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
