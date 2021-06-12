@@ -9,4 +9,4 @@ language: java
 #  - docker build -t rbarajasd/my-app -f Dockerfile.dev .
 
 script:
-  - ./gradle build
+  - ./gradlew build
